@@ -1,0 +1,179 @@
+body {
+  font-family: sans-serif;
+  background: #fff;
+  display: inline;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+    
+.box div {
+  width: 300px;
+  height: 300px;
+}
+
+.base-timer {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+  
+.base-timer__svg {
+  transform: scaleX(-1);
+}
+  
+.base-timer__circle {
+  fill: none;
+  stroke: none;
+}
+  
+.base-timer__path-elapsed {
+  stroke-width: 7px;
+  visibility: hidden;
+}
+  
+.base-timer__path-remaining {
+  stroke-width: 7px;
+  stroke-linecap: round;
+  transform: rotate(90deg);
+  transform-origin: center;
+  transition: 1s linear all;
+  fill-rule: nonzero;
+  stroke: currentColor;
+}
+  
+.base-timer__path-remaining.green {
+  color: rgb(65, 184, 131);
+}
+  
+.base-timer__path-remaining.orange {
+  color: orange;
+}
+  
+.base-timer__path-remaining.red {
+  color: red;
+}
+  
+.base-timer__label {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+  color: #000;
+}
+
+header {
+  background-color: orange;
+}
+
+footer {
+  background: orange;
+}
+
+a {
+  color: black;
+}
+
+.button {
+  background-color: red;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.box2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+    
+.box2 div {
+  width: auto;
+  height: 70px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: -250px;
+  background-color: white;
+  padding-top: 60px;
+  transition: left 0.5s ease;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: red;
+}
+
+.sidenav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidenav.active {
+  left: 0;
+}
+
+.sidenav .close {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 30px;
+}
+
+.burger-icon span {
+  display: block;
+  width: 35px;
+  height: 5px;
+  background-color: red;
+  margin: 6px 15px;
+}
+
+#menu-vertical, #menu-vertical ul {
+  padding:0;
+  margin:0;
+  list-style:none;
+  width: 180px;
+}
+
+#menu-vertical li {
+  position: relative;
+  background:orange;
+  border: solid;
+}
+
+#menu-vertical ul {
+  position: absolute;
+  left:-999em;
+}
+
+#menu-vertical li:hover ul {
+  top: 0;
+  left: 180px;
+}
