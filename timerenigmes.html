@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
-		<title>Jeu de fâmtomes</title>
-		<meta name="description" content="Acceuil du site" />
+		<title>Timer Enigmes</title>
+		<meta name="description" content="Timer Enigmes"/>
 		<meta charset="utf-8"/>
-		<link rel="stylesheet" href="index.css" />
+		<link rel="stylesheet" href="timer.css"/>
 	</head>
 	<body>
         <header>
             <div id="mySidenav" class="sidenav">
-                <a id="closeBtn" href="index.html" class="close">x</a>
+                <a id="closeBtn" href="timer.html" class="close">x</a>
                 <ul id="menu-vertical">
                     <li><a href="index.html">Acceuil</a></li>
                     <li><a href="actions.html">Actions</a>
@@ -36,11 +36,21 @@
             </br>
             </a>
         </header>
-    	<script src="index.js"></script>
-		<h1><u>Acceuil pour tous les timer :</u></h1>
-		<div>
-			<button class="button" onclick="window.location.href ='actions.html'">Actions</button>
-			<button class="button" onclick="window.location.href ='questions.html'">Questions</button>
-		</div>
+        <div class="box">
+            <div>
+                <div id="app">
+                    <script src="timerenigmes.js"></script>
+                </div>
+            </div>
+        </div>
+        <div class="box2">
+            <div>
+                <input type="button" class="button" onclick='startTimer()' value="Start"/>
+                <input type="button" class="button" onclick='window.location.reload(false)' value="Reset"/>
+            </div>
+        </div>
+        <footer>
+            
+        </footer>
 	</body>
 </html>
